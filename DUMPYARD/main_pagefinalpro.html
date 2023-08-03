@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('coffeeshop.jpg'); /* Replace 'your_background_image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main-content {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Added transparency to make the content background slightly transparent */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #b81e20;
+        }
+
+        h2 {
+            color: #222;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex; /* Display the list items (li) side by side */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+            justify-content: center; /* Center the list items horizontally */
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        .category-image {
+            width: 200px; /* Increased width to 200px */
+            height: 150px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .category-name {
+            font-size: 18px;
+            color: #222;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Welcome to the Coffee Shop!</h1>
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <a href="espresso.html">
+                    <img class="category-image" src="espresso.jpg" alt="Espresso">
+                    <div class="category-name">Espresso</div>
+                </a>
+            </li>
+            <li>
+                <a href="cappuccino.html">
+                    <img class="category-image" src="cappuccino.jpg" alt="Cappuccino">
+                    <div class="category-name">Cappuccino</div>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="sandwiches.html">
+                    <img class="category-image" src="sandwiches.jpg" alt="Sandwiches">
+                    <div class="category-name">Sandwiches</div>
+                </a>
+            </li>
+            <li>
+                <a href="pastries.html">
+                    <img class="category-image" src="pastries.jpg" alt="Pastries">
+                    <div class="category-name">Pastries</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu - {{ category.capitalize() }}</title>
+</head>
+<body>
+    <h1>{{ category.capitalize() }} Menu</h1>
+    <ul>
+        {% for item in menu[category] %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <p>Available inventory for {{ category.capitalize() }}: {{ inventory[category] }}</p>
+</body>
+</html>
